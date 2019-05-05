@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/ui-media.css"/>
+    <link rel="stylesheet" href="css/ui-component.css"/>
+    <link rel="stylesheet" href="css/ui-common.css"/>
+    <link rel="stylesheet" href="css/map.css">
+    <!--引入地图api-->
+    <script type="text/javascript" src="http://webapi.amap.com/maps?v=1.4.6&key=你的key&plugin=AMap.Autocomplete,AMap.Geocoder,AMap.PlaceSearch,AMap.ToolBar"></script>
+</head>
+<body>
+    <div class="weui-cells">
+        <div class="weui-cell">
+            <div class="weui-cell__bd">
+                <p>地址描述</p>
+            </div>
+            <div class="weui-cell__ft">
+                <!--<input name="EVEN_ADDR"  type="text" placeholder="" disabled="disabled">-->
+                <span class=" weui-input text-right adress">地图定位</span>
+                <span class="address_map"></span>
+            </div>
+        </div>
+    </div>
+    <div class="textarea_map">
+        <textarea name="DESCRIPTION" class="weui-textarea" placeholder=""rows="3" disabled="disabled" id="textarea_map"></textarea>
+    </div>
+</body>
+
+<!--地图模态框-->
+<div class="map_bounced">
+    <div id="header_two" data-position="fixed" data-tap-toggle="false">
+        <div class="header">
+            <div class="back back_map">返回</div>
+            <div class="h1">地图位置</div>
+            <div class="zimu type_map_yes">确定</div>
+        </div>
+    </div>
+    <span class="input"></span>
+    <input type="text" id="tipinput" placeholder="搜索">
+    <div id="container">
+    </div>
+</div>
+<!--引入地图ui组件-->
+<script src="js/map_ui.js"></script>
+<script src="js/jquery-2.1.4.js"></script>
+<script src="js/Gd_map.js"></script>
+</html>
